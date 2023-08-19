@@ -8,13 +8,13 @@
 }
 
 header {
-    height: 100vh;
+    height: 89.6vh;
     width: 100%;
     background-position: center;
 }
 
 header nav {
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -180,4 +180,35 @@ header .media-icons {
     font-size: 25px;
     font-weight: 500;
     color: #2c3e50;
+}
+
+.footerContainer {
+    height: 100px;
+    background-color: #2e3167;
+    background-image: -webkit-linear-gradient(135deg, #9599E2 0%, #9599E2 100%)
+}
+
+.footerContent {
+    margin-left: 110px;
+    margin-right: 110px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons .mediaIcons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.icons .mediaIcons a{
+    font-size: 1.5rem;
 }
