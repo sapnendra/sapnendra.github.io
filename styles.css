@@ -68,16 +68,16 @@ nav .navbar {
     transform: scale(1.1);
 }
 
-.signbuttons {
+.users {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.signbuttons .ResisterButton {
+.users .resistration {
     color: #fff;
-    padding: 8px 20px;
+    padding: 8px 40px 8px 40px;
     font-size: 18px;
     cursor: pointer;
     border-radius: 20px;
@@ -89,70 +89,15 @@ nav .navbar {
     transition: all 0.1s linear;
 }
 
-.signbuttons .ResisterButton:hover {
+.users .resistration:hover {
     background-color: #4c6dc9;
     transform: scale(1.05);
 }
 
-.signbuttons .ResisterButton a {
+.users .resistration a {
     text-decoration: none;
     color: white;
 }
-
-.signbuttons .LoginButton {
-    color: #fff;
-    padding: 8px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    background: #2e3167;
-    transition: all 0.2s linear;
-    box-shadow: 1px 2px 2px gray;
-    transition: all 0.1s linear;
-}
-
-.signbuttons .LoginButton a {
-    text-decoration: none;
-    color: white;
-}
-
-.signbuttons .LoginButton:hover {
-    background-color: #4c6dc9;
-    transform: scale(1.05);
-}
-
-/* .navbar .search-box {
-    position: relative;
-    height: 50px;
-    width: 250px;
-} */
-
-/* .search-box input[type="text"] {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    color: #2c3e50;
-    font-size: 18px;
-    outline: none;
-    border: 2px solid #2c3e50;
-    border-radius: 8px;
-    padding: 0 10px 0 40px;
-}
-
-.search-box a {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #2c3e50;
-    padding: 0px 5px 0px 0px;
-    border-right: 2px solid #2c3e50;
-} */
 
 .content {
     position: relative;
@@ -185,7 +130,6 @@ nav .navbar {
     overflow: hidden;
     border-right: 4px solid #32327c;
     animation: 5s steps(23) infinite typing;
-    /* background: aqua; */
 }
 
 @keyframes typing {
@@ -310,7 +254,7 @@ nav .navbar {
     margin: 25px;
 }
 
-.buttons .button {
+.buttons a button {
     color: #fff;
     font-size: 14px;
     border: none;
@@ -322,7 +266,12 @@ nav .navbar {
     transition: all 0.2s ease;
 }
 
-.buttons .button:hover {
+.buttons a button {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons a button:hover {
     transform: scale(1.15);
     background-color: #0e4bf1;
 }
@@ -330,7 +279,6 @@ nav .navbar {
 .profile-card .analytics {
     display: flex;
     align-items: center;
-    /* margin-top: 25px; */
 }
 
 .analytics .data {
@@ -351,6 +299,66 @@ nav .navbar {
 }
 
 
+
+
+/* Default styles */
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    .navbar {
+      display: block;
+      /* Adjust other styles for mobile */
+    }
+    .menu {
+      text-align: center;
+    }
+    .logo img {
+      max-width: 80px; /* Adjust logo size */
+    }
+    .text {
+      font-size: 24px; /* Adjust font size for mobile */
+    }
+    /* Other adjustments for mobile */
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+      display: flex;
+    }
+    .menu {
+      text-align: center;
+    }
+    .logo img {
+      max-width: 100px; /* Adjust logo size */
+    }
+    .text {
+      font-size: 28px; /* Adjust font size for tablets */
+    }
+    /* Other adjustments for tablets */
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1025px) {
+    .navbar {
+      display: flex;
+    }
+    .menu {
+      text-align: center;
+    }
+    .logo img {
+      max-width: 150px; /* Adjust logo size */
+    }
+    .text {
+      font-size: 32px; /* Adjust font size for desktop */
+    }
+    /* Other adjustments for desktop */
+  }
+  
+
+
+
+
 .footerContainer {
     height: 120px;
     background-color: #2e3167;
@@ -365,6 +373,11 @@ nav .navbar {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.footerContent p {
+    font-size: 1.1rem;
+    font-family: sans-serif;
 }
 
 .icons {
@@ -390,4 +403,9 @@ nav .navbar {
 
 .copyright p {
     font-size: 1rem;
+}
+
+.copyright p a {
+    text-decoration: none;
+    color: blue;
 }
