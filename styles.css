@@ -166,7 +166,7 @@ nav .navbar {
 
 .content .buttons button:hover {
     transform: scale(1.1);
-    background-color: #0e4bf1;
+    background-color: #4c6dc9;
 }
 
 .profile-card {
@@ -273,7 +273,7 @@ nav .navbar {
 
 .buttons a button:hover {
     transform: scale(1.15);
-    background-color: #0e4bf1;
+    background-color: #4c6dc9;
 }
 
 .profile-card .analytics {
@@ -366,6 +366,7 @@ nav .navbar {
 }
 
 .footerContent {
+    position: relative;
     margin-left: 110px;
     margin-right: 110px;
     padding: 10px;
