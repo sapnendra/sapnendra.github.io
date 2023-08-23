@@ -177,10 +177,16 @@ nav .navbar {
     max-width: 370px;
     width: 100%;
     background: #fff;
+    border: 1px solid gray;
     border-radius: 24px;
     padding: 25px;
-    box-shadow: 2px 5px 10px #9599E2;
+    box-shadow: 1px 2px 2px #9599E2;
     position: relative;
+    transition: all 0.09s linear;
+}
+
+.profile-card:hover {
+    box-shadow: 2px 5px 10px #9599E2;
 }
 
 .profile-card::before {
