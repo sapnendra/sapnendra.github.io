@@ -180,7 +180,7 @@ nav .navbar {
     border: 1px solid gray;
     border-radius: 24px;
     padding: 25px;
-    box-shadow: 1px 2px 2px #9599E2;
+    box-shadow: 1px 2px 10px gray;
     position: relative;
     transition: all 0.09s linear;
 }
