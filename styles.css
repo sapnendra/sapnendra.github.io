@@ -86,12 +86,12 @@ nav .navbar {
     background: #2e3167;
     transition: all 0.2s linear;
     box-shadow: 1px 2px 2px gray;
-    transition: all 0.1s linear;
+    transition: all 0.05s linear;
 }
 
 .users .resistration:hover {
     background-color: #4c6dc9;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .users .resistration a {
