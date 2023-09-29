@@ -349,10 +349,6 @@ nav .navbar {
     }
     /* Other adjustments for desktop */
   }
-  
-
-
-
 
 .footerContainer {
     height: 120px;
@@ -391,7 +387,7 @@ nav .navbar {
     font-size: 1.5rem;
 }
 
-.copyright {
+/* .copyright {
     display: flex;
     justify-content: center;
     margin-right: 200px;
@@ -404,4 +400,4 @@ nav .navbar {
 .copyright p a {
     text-decoration: none;
     color: blue;
-}
+} */
