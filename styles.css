@@ -90,7 +90,7 @@ nav .navbar {
 }
 
 .users .resistration:hover {
-    background-color: #4c6dc9;
+    background-color: red;
     transform: scale(1.05);
 }
 
