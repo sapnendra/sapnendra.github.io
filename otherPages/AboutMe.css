@@ -62,3 +62,23 @@
     font-size: 1.8rem;
     color: rgb(36, 108, 216);
 }
+
+/* dropdown */
+
+.dropdown {
+    margin-top: 19px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dropdown select {
+    padding: 6px;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 19px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
