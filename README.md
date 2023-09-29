@@ -4,7 +4,7 @@
 
 🌱 I’m currently learning ... MERN stack
 
-💞️ I’m looking to collaborate on ... a big project
+💞️ I’m looking to collaborate on ... open source project
 
 📫 How to reach me ... ?
 
