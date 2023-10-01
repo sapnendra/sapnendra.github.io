@@ -3,12 +3,16 @@
     padding: 0px;
 }
 
+body {
+    background-color: rgb(238, 238, 238);
+}
+
 .box {
     margin-top: 25px;
-    margin-left: 480px;
-    width: 900px;
-    height: 920px;
-    background-color:rgb(255, 255, 255);
+    margin-left: 540px;
+    width: 720px;
+    height: 850px;
+    background-color:white;
     border-radius: 5px;
     box-shadow: 0px 0px 8px gray;
     padding: 30px;
@@ -81,4 +85,15 @@
     margin-top: 19px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.boom {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
 }
