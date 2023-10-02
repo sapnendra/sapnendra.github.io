@@ -87,13 +87,37 @@ body {
     margin-right: 50px;
 }
 
-.boom {
-    height: 600px;
+.text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.BottomIcons {
+    display: flex;
+    justify-content: flex-start;
     text-align: center;
-    font-size: 5rem;
-    font-weight: 900;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.BottomIcons p a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+#border {
+    border: 2px solid black;
 }
