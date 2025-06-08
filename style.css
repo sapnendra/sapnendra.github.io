@@ -23,11 +23,12 @@ body {
   max-width: 650px;
   width: 100%;
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 h1 {
   font-size: 2.5rem;
-  color: #ff6f00;
+  color: #28a745; /* green for "live" */
   margin-bottom: 15px;
 }
 
@@ -40,6 +41,17 @@ p {
 .emoji {
   font-size: 2rem;
   margin-top: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .contact {
@@ -56,6 +68,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #999;
 }
 
 /* Responsive Styling */
