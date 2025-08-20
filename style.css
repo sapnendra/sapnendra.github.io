@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-  background: linear-gradient(to right bottom, #00ffdd, #0000ff);
+  background: #18181b;
   color: #f4f4f5;
   min-height: 100vh;
   display: flex;
