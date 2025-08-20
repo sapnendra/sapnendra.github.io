@@ -1,110 +1,70 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(to right bottom, #00ffdd, #0000ff);
+  color: #f4f4f5;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
+  justify-content: center;
 }
-
 .container {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 650px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-  position: relative;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: #23232a;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.15);
 }
-
 h1 {
   font-size: 2.5rem;
-  color: #28a745; /* green for "live" */
-  margin-bottom: 15px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
-
-p {
-  font-size: 1.1rem;
-  color: #333;
-  margin: 10px 0;
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #a1a1aa;
+  margin-bottom: 2rem;
 }
-
-.emoji {
-  font-size: 2rem;
-  margin-top: 20px;
-  animation: bounce 2s infinite;
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-.contact {
-  margin-top: 30px;
-  font-size: 1rem;
-  color: #555;
-}
-
-a {
-  color: #007bff;
+.links a {
   text-decoration: none;
-  font-weight: 600;
+  color: #f4f4f5;
+  background: #27272f;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
-a:hover {
-  text-decoration: underline;
+.links a:hover {
+  background: #3b82f6;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(59,130,246,0.15);
 }
-
-footer {
-  margin-top: 20px;
-  font-size: 0.85rem;
-  color: #999;
+.about {
+  margin-top: 2.5rem;
+  color: #d4d4d8;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
-
-/* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
-    padding: 30px 20px;
+    padding: 1.2rem 0.5rem;
   }
-
   h1 {
     font-size: 2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .emoji {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  .emoji {
-    font-size: 1.5rem;
-  }
-
-  .contact {
-    font-size: 0.9rem;
   }
 }
