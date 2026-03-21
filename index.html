@@ -1,40 +1,555 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sapnendra Jaiswal - Full Stack Developer & Open Source Enthusiast. Building scalable web apps with MERN Stack, Cloudflare Workers, and AWS."
+    />
+    <meta
+      name="keywords"
+      content="Sapnendra Jaiswal, Full Stack Developer, MERN Stack, Node.js, Next.js, Open Source, Portfolio"
+    />
+    <meta name="author" content="Sapnendra Jaiswal" />
+    <meta
+      property="og:title"
+      content="Sapnendra Jaiswal - Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Building scalable web apps | MERN Stack | Cloudflare Workers | AWS"
+    />
+    <meta property="og:url" content="https://sapnendra.github.io" />
+    <meta property="og:type" content="website" />
     <title>Sapnendra Jaiswal - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <style></style>
+
+    <!-- Google Fonts: JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
   </head>
+
   <body>
-    <div class="container">
-      <h1>Hi, I'm Sapnendra Jaiswal</h1>
-      <h2>Full Stack Developer &amp; Open Source Enthusiast</h2>
-      <div class="links">
-        <a href="mailto:sapnendrajaiswal2388@gamil.com">Email</a>
-        <a href="https://github.com/sapnendra" target="_blank" rel="noopener"
-          >GitHub</a
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="nav-brand">sapnendra<span>.dev</span></div>
+        <div class="nav-links" id="nav-links" role="menubar">
+          <a href="#about" role="menuitem">about</a>
+          <a href="#skills" role="menuitem">skills</a>
+          <a href="#experience" role="menuitem">experience</a>
+          <a href="#projects" role="menuitem">projects</a>
+          <a href="#achievements" role="menuitem">achievements</a>
+          <a href="#contact" role="menuitem">contact</a>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
         >
-        <a
-          href="https://linkedin.com/in/sapnendra"
-          target="_blank"
-          rel="noopener"
-          >LinkedIn</a
-        >
-        <a href="https://sapnendra.onrender.com" target="_blank" rel="noopener"
-          >Portfolio</a
-        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="about">
-        <p>
-          I build scalable web applications and contribute to open source
-          projects. Passionate about JavaScript, C++, and MERN Stack developer.
-          <br />
-          Let's connect and create something amazing!
+      <div class="mobile-menu" id="mobile-menu" role="menu">
+        <a href="#about" role="menuitem">about</a>
+        <a href="#skills" role="menuitem">skills</a>
+        <a href="#experience" role="menuitem">experience</a>
+        <a href="#projects" role="menuitem">projects</a>
+        <a href="#achievements" role="menuitem">achievements</a>
+        <a href="#contact" role="menuitem">contact</a>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-eyebrow">available for opportunities</div>
+        <h1 class="hero-name">Sapnendra Jaiswal</h1>
+        <p class="hero-role">
+          Full Stack Developer &amp; Open Source Enthusiast
+        </p>
+        <p class="hero-subtitle">
+          Building websites for businesses
+        </p>
+        <div class="social-row" role="list" aria-label="Social links">
+          <a
+            class="social-btn"
+            href="mailto:hello@sapnendra.tech"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope"></i> hello@sapnendra.tech
+          </a>
+          <a
+            class="social-btn"
+            href="https://github.com/sapnendra"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i> github
+          </a>
+          <a
+            class="social-btn"
+            href="https://linkedin.com/in/sapnendra"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i> linkedin
+          </a>
+          <a
+            class="social-btn"
+            href="https://sapnendra.dev/about"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="Portfolio"
+          >
+            <i class="fa-solid fa-globe"></i> sapnendra.dev
+          </a>
+          <a
+            class="social-btn"
+            href="https://pa.sapnendra.tech"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="Profile Analyzer"
+          >
+            <i class="fa-solid fa-chart-bar"></i> pa.sapnendra.tech
+          </a>
+          <a
+            class="social-btn"
+            href="https://taanki.sapnendra.tech"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+            aria-label="Taanki"
+          >
+            <i class="fa-solid fa-store"></i> taanki.sapnendra.tech
+          </a>
+          <a class="social-btn" href="tel:+919685238884" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i> +91 96852 38884
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section" aria-label="About">
+      <div class="container">
+        <p class="section-label">01 - about</p>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I build scalable web applications with a focus on backend
+              architecture, API performance, and production-grade security.
+              Passionate about JavaScript, C++, and the MERN Stack. I enjoy
+              designing systems that are fast, secure, and maintainable at scale
+              - from RESTful APIs to serverless edge workers and event-driven
+              queues.
+            </p>
+          </div>
+          <div class="edu-card">
+            <p class="edu-label">
+              <i class="fa-solid fa-graduation-cap"></i> &nbsp;Education
+            </p>
+            <p class="edu-degree">
+              B.Tech - Computer Science &amp; Engineering
+            </p>
+            <p class="edu-school">
+              Technocrats Institute of Technology, Bhopal
+            </p>
+            <div class="edu-meta">
+              <span class="edu-badge">2021 – 2025</span>
+              <span class="edu-badge green">CGPA&nbsp;8.10 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section" aria-label="Skills">
+      <div class="container">
+        <p class="section-label">02 - skills</p>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <p class="skill-group-title">Languages</p>
+            <div class="tags">
+              <span class="tag accent">C++</span>
+              <span class="tag accent">JavaScript</span>
+              <span class="tag accent">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-title">Frameworks &amp; Libraries</p>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">React.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">Hono.js</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-title">Databases</p>
+            <div class="tags">
+              <span class="tag">MongoDB</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Redis</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-title">Tools &amp; Platforms</p>
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Figma</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-title">Auth &amp; Security</p>
+            <div class="tags">
+              <span class="tag">OAuth 2.0</span>
+              <span class="tag">JWT</span>
+              <span class="tag">API Rate Limiting</span>
+              <span class="tag">Helmet.js</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-title">Advanced &amp; DevOps</p>
+            <div class="tags">
+              <span class="tag">Cloudflare Workers</span>
+              <span class="tag">Serverless</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">AWS</span>
+              <span class="tag">BullMQ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section" aria-label="Experience">
+      <div class="container">
+        <p class="section-label">03 - experience</p>
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="exp-card">
+          <div class="exp-line">
+            <div class="exp-dot"></div>
+            <div class="exp-trail"></div>
+          </div>
+          <div>
+            <p class="exp-role">Software Developer Intern</p>
+            <p class="exp-company">Sheryians Coding School - Bhopal</p>
+            <p class="exp-dates">Dec 2025 &ndash; Present</p>
+            <ul class="exp-points">
+              <li>
+                Worked alongside core dev team on production systems and
+                real-world deployments.
+              </li>
+              <li>
+                Developed and fixed UI components, improving visual consistency
+                and responsiveness across pages.
+              </li>
+              <li>
+                Analyzed API response latency, identified bottlenecks, and
+                documented performance findings for the team.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <p class="section-label">04 - projects</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <p class="project-name">Profile Analyzer</p>
+                <p class="project-sub">Developer Analytics SaaS</p>
+              </div>
+              <a
+                class="project-link-icon"
+                href="https://sapnendra.dev"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Profile Analyzer project"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <ul class="project-desc">
+              <li>
+                OAuth 2.0 with GitHub, LinkedIn &amp; LeetCode APIs for unified
+                developer stats.
+              </li>
+              <li>
+                JWT-based auth with refresh token rotation and HTTP-only cookie
+                storage.
+              </li>
+              <li>
+                Redis caching layer for API responses - sub-100ms latency on
+                repeated queries.
+              </li>
+              <li>
+                AI-powered skill analysis engine with automated document
+                generation.
+              </li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">Next.js 16+</span>
+              <span class="stack-tag">React 19</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Redis</span>
+              <span class="stack-tag">BullMQ</span>
+              <span class="stack-tag">Recharts</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <p class="project-name">Taanki.Shop</p>
+                <p class="project-sub">Production E-Commerce Platform</p>
+              </div>
+              <a
+                class="project-link-icon"
+                href="https://taanki.sapnendra.tech"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Taanki project"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <ul class="project-desc">
+              <li>
+                JWT auth with HTTP-only cookies + OTP-based login for secure
+                sessions.
+              </li>
+              <li>
+                Razorpay payment gateway integration with order lifecycle
+                management.
+              </li>
+              <li>
+                Admin dashboard with real-time analytics, inventory, and order
+                management.
+              </li>
+              <li>
+                Production hardened: bcrypt, Helmet.js, rate limiting &amp;
+                NoSQL injection prevention.
+              </li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Redis</span>
+              <span class="stack-tag">BullMQ</span>
+              <span class="stack-tag">Razorpay</span>
+              <span class="stack-tag">Cloudinary</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements" class="section" aria-label="Achievements">
+      <div class="container">
+        <p class="section-label">05 - achievements</p>
+        <h2 class="section-title">Highlights</h2>
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <p class="achievement-text">
+              Winner - Website Battle Competition
+            </p>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon"><i class="fa-solid fa-flag"></i></div>
+            <p class="achievement-text">
+              Participant - Smart India Hackathon (SIH)
+            </p>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <p class="achievement-text">
+              Top 50 Rank - College Coding Hackathon (500+ participants)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container">
+        <p class="section-label">06 - contact</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-intro">
+            <p>
+              Open to backend engineering roles, full-stack freelance work, and
+              open-source collaborations. Feel free to reach out via any channel
+              below - I respond quickly.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a
+              class="contact-link"
+              href="mailto:hello@sapnendra.tech"
+              target="_blank"
+              rel="noopener"
+              aria-label="Email Sapnendra"
+            >
+              <i class="fa-solid fa-envelope"></i> hello@sapnendra.tech
+            </a>
+            <a
+              class="contact-link"
+              href="https://github.com/sapnendra"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub profile"
+            >
+              <i class="fa-brands fa-github"></i> github.com/sapnendra
+            </a>
+            <a
+              class="contact-link"
+              href="https://linkedin.com/in/sapnendra"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn profile"
+            >
+              <i class="fa-brands fa-linkedin"></i> linkedin.com/in/sapnendra
+            </a>
+            <a
+              class="contact-link"
+              href="https://sapnendra.dev"
+              target="_blank"
+              rel="noopener"
+              aria-label="Portfolio site"
+            >
+              <i class="fa-solid fa-globe"></i> sapnendra.dev
+            </a>
+            <a
+              class="contact-link"
+              href="https://sapnendra.tech"
+              target="_blank"
+              rel="noopener"
+              aria-label="sapnendra.tech"
+            >
+              <i class="fa-solid fa-code"></i> sapnendra.tech
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <div class="status-bar">
+          <span class="status-dot"></span>
+          <span>sapnendra.github.io</span>
+          <span style="margin-left: auto">UTF-8</span>
+          <span>HTML</span>
+        </div>
+      </div>
+      <div style="padding: 1rem 0">
+        <p class="footer-text">
+          Built by <span>Sapnendra Jaiswal</span> - &copy;
+          2026
         </p>
       </div>
-    </div>
+    </footer>
+
+    <!-- ===== JS: Mobile Menu ===== -->
+    <script>
+      (function () {
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        hamburger.addEventListener("click", function () {
+          const isOpen = mobileMenu.classList.toggle("open");
+          hamburger.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.remove("open");
+            hamburger.setAttribute("aria-expanded", "false");
+          });
+        });
+
+        // Highlight active nav section on scroll
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(
+          ".nav-links a, .mobile-menu a",
+        );
+
+        function onScroll() {
+          let current = "";
+          sections.forEach(function (sec) {
+            const top = sec.getBoundingClientRect().top;
+            if (top <= 80) current = sec.getAttribute("id");
+          });
+          navLinks.forEach(function (link) {
+            link.style.color = "";
+            if (link.getAttribute("href") === "#" + current) {
+              link.style.color = "var(--accent-green)";
+            }
+          });
+        }
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>
