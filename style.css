@@ -594,7 +594,7 @@ nav {
 /* ===== CONTACT ===== */
 #contact {
   border-bottom: none;
-  padding-bottom: 0;
+  padding-bottom: 3.5rem;
 }
 
 .contact-grid {
